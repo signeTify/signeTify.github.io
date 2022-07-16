@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+
 header
 {
   position: absolute;
@@ -18,12 +20,34 @@ header
   justify-content: space-between;
   align-items: center;
 }
+
 header .logo
 {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
 }
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+
 .toggle
 {
   position: relative;
@@ -43,6 +67,9 @@ header .logo
   background-position: center;
   cursor: pointer;
 }
+
+
+
 .showcase
 {
   position: absolute;
@@ -74,19 +101,6 @@ header .logo
 }
 
 
-.showcase img
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-}
-
-
-
 .overlay
 {
   position: absolute;
@@ -100,11 +114,33 @@ header .logo
 
 .text
 {
+  width: 100%;
+  left: 10%;
+  z-index: 10;
+  animation-name: fadeIn;
+  text-align: center;
+  padding-top: 3%;
+}
+.text2
+{
   position: relative ;
-  /* right: 50%; */
+  width: 100%;
+  text-align: center;
   z-index: 10;
   animation-name: fadeIn;
 }
+.text3
+{
+  position: relative ;
+  width: 100%;
+  text-align: left;
+  z-index: 10;
+  animation-name: fadeIn;
+}
+
+
+
+
 
 .text h2
 {
@@ -114,44 +150,74 @@ header .logo
   line-height: 1em;
   text-transform: uppercase;
 }
+
+.text2 h2
+{
+  font-size: 5em;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
 .text h3
 {
   font-size: 4em;
-  font-weight: 600;
+  font-weight: 200;
   font-style: italic;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.text p
+.text3 h3
 {
-  font-size: 1.1em;
+  font-size: 4em;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text3 p
+{
+  font-size: 1em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
-  max-width: 700px;
+  width: 500px;
 }
+
 .text a
 {
   display: inline-block;
-  font-size: 1em;
-  padding-top: 10%;
-  background: rgb(104, 182, 255);
-  padding: 10px 30px;
+  font-size: 2em;
+  padding: 2%;
   text-transform: uppercase;
   font-style: oblique;
   text-decoration: none;
-  font-weight: 500;
-  margin-top: 5px;
-  color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
   letter-spacing: 0.5px;
   transition: 0.2s;
-  border-radius: 8px 25px;
 }
 .text a:hover
 {
   transform: scale(1) translateY(-5px);
+  font-weight: 600;
 }
+.text2 a
+{
+  padding-top: 5%;
+  font-size: 3em;
+  font-weight: 250;
+  color: #fff;
+  font-style: italic;
+  line-height: 1em;
+}
+
+
+
+
 .social
 {
   position: absolute;
@@ -177,6 +243,10 @@ header .logo
 {
   transform: scale(0.5) translateY(-15px);
 }
+
+
+
+
 .menu
 {
   position: absolute;
@@ -189,6 +259,20 @@ header .logo
   align-items: center;
   background-color: #111;
 }
+
+.contact
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
 .menu ul
 {
   position: relative;
