@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.Air {
+  padding: 5%;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+
+.DPImage img {
+  position: relative;
+  left: 20%;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  max-width: 35%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #646464;
+  mix-blend-mode: overlay;
+}
+
+.text {
+  max-width: 100%;
+  height: auto;
+  z-index: 10;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  text-align: center;
+  padding-top: 3%;
+  margin: auto;
+}
+
+.text2 {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  max-width: 100%;
+  height: auto;
+}
+
+.text3 {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  text-align: left;
+  z-index: 10;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+.text h2 {
+  font-size: 5em;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text2 h2 {
+  font-size: 3.5vw;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 4em;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text3 h3 {
+  font-size: 4em;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text3 p {
+  font-size: 1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  width: 500px;
+}
+
+.text4 {
+  max-width: 100%;
+  height: auto;
+  z-index: 10;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  padding-top: 3%;
+  margin: auto;
+}
+
+.text4 h3 {
+  font-size: 2vw;
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text4 a {
+  display: inline-block;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+
+.text a {
+  display: inline-block;
+  font-size: 1.5vw;
+  padding: 2%;
+  text-transform: uppercase;
+  font-style: oblique;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  transform: scale(1) translateY(-5px);
+  font-weight: 600;
+}
+
+.text2 a {
+  padding-top: 5%;
+  font-size: 2vw;
+  font-weight: 250;
+  color: #fff;
+  font-style: italic;
+  line-height: 1em;
+}
+
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+
+
+.contact {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+.menu ul {
+  position: relative;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu ul li a:hover {
+  color: #a20b00;
+}
+
+@media (max-width: 991px) {
+  .showcase,
+.showcase header {
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+  margin-top: 2%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
